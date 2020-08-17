@@ -25,5 +25,4 @@ const styles = StyleSheet.create({
     ANDROIDHeader:{
         backgroundColor:'#fcb481'
     }
-
 })

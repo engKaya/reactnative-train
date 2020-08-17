@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "loginTrain-tvOS.app"
-               BlueprintName = "loginTrain-tvOS"
-               ReferencedContainer = "container:loginTrain.xcodeproj">
+               BuildableName = "LoginTrain-tvOS.app"
+               BlueprintName = "LoginTrain-tvOS"
+               ReferencedContainer = "container:LoginTrain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "loginTrain-tvOSTests.xctest"
-               BlueprintName = "loginTrain-tvOSTests"
-               ReferencedContainer = "container:loginTrain.xcodeproj">
+               BuildableName = "LoginTrain-tvOSTests.xctest"
+               BlueprintName = "LoginTrain-tvOSTests"
+               ReferencedContainer = "container:LoginTrain.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "loginTrain-tvOS.app"
-            BlueprintName = "loginTrain-tvOS"
-            ReferencedContainer = "container:loginTrain.xcodeproj">
+            BuildableName = "LoginTrain-tvOS.app"
+            BlueprintName = "LoginTrain-tvOS"
+            ReferencedContainer = "container:LoginTrain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "loginTrain-tvOS.app"
-            BlueprintName = "loginTrain-tvOS"
-            ReferencedContainer = "container:loginTrain.xcodeproj">
+            BuildableName = "LoginTrain-tvOS.app"
+            BlueprintName = "LoginTrain-tvOS"
+            ReferencedContainer = "container:LoginTrain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
