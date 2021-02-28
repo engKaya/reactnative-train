@@ -7,20 +7,23 @@
  */
 
 import React, {Component} from 'react'
-import { StyleSheet,Text, View, SafeAreaView,TextInput,TouchableOpacity ,Image, FlatList} from 'react-native';
+import { StyleSheet,Text, View, SafeAreaView,TextInput,TouchableOpacity ,Image, FlatList, TouchableWithoutFeedback} from 'react-native';
 
 import data from '../../data'
+
 
 
 
 export default class FlatListOrnek extends Component {
   state = {
     text:'',
-    contacts:data
+    contacts:data,
+    itemTouch:false
   }
   renderContactsItem = ({item,index}) =>{
     return(
-      <TouchableOpacity style={[styles.itemContainer,{backgroundColor:index % 2 === 1 ? '#f5d7b5' : '#f5e5d3'}]}>
+      <TouchableOpacity 
+        style={[styles.itemContainer,{backgroundColor:index % 2 === 1 ? '#f5d7b5' : '#f5e5d3'}]}>
         <Image style={styles.avatar} source={{uri:item.picture}}/> 
         <View style={styles.textContainer}>
           <Text style={styles.name}>{item.name}</Text>
@@ -46,13 +49,11 @@ export default class FlatListOrnek extends Component {
   renderHeader = () =>{
     const {text} = this.state
     return(
-      <View style={styles.searchContainer}>
-        <TextInput value={this.text} 
-        onChangeText = {text=>{
-          this.setState({
-            text,
-          });this.searchFilter(text);
-        }}
+      <View 
+      style={styles.searchContainer}>
+        <TextInput 
+        value={this.text} 
+        onChangeText = {text=>{this.setState({ text }); this.searchFilter(text)}}
         style={styles.searchInput} 
         placeholder='Ara..'/>
       </View>
@@ -65,9 +66,9 @@ export default class FlatListOrnek extends Component {
     <SafeAreaView>
         <FlatList 
         ListHeaderComponent={this.renderHeader()}
-        renderItem={this.renderContactsItem}
-        keyExtractor={(item)=>item._id}
-        data={this.state.contacts}
+        renderItem={this.renderContactsItem}     //<---ı buraya
+        keyExtractor={(item)=>item._id}            //  |
+        data={this.state.contacts}        ///Buradan --|
         />
     </SafeAreaView>
     );
@@ -76,6 +77,7 @@ export default class FlatListOrnek extends Component {
 
 const styles = StyleSheet.create({
   itemContainer:{
+    
     flex:1,
     flexDirection:"row",
     paddingVertical:10,
